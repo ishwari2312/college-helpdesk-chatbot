@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Helpdesk Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="overlay">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>🎓 Dashboard</h2>
+        <ul>
+            <li>🏠 Home</li>
+            <li>💰 Fees</li>
+            <li>📄 Admission</li>
+            <li>📞 Contact</li>
+        </ul>
+    </div>
+
+    <!-- Main Chat Area -->
+    <div class="main">
+        <div class="chat-container">
+            <div class="chat-header">
+                College Helpdesk 🤖
+            </div>
+
+            <div id="chat-box" class="chat-box"></div>
+
+            <div class="input-area">
+                <input type="text" id="user-input" placeholder="Ask something..." />
+                <button onclick="sendMessage()">➤</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
