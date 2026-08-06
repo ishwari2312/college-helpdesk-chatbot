@@ -9,7 +9,7 @@ with open('data.json') as f:
     data = json.load(f)
 
 # 🔹 OpenAI client
-client = OpenAI(api_key="Ysk-proj-iuVxMnlQRRInza9Y_VP21ooBavijIIcZOEmD9uluLQLjPc3E8j2jupE1P4GP0PxNvyZD0Y5qM1T3BlbkFJdIN4iXcW26JJ9hKKVkp06Jkn0je8plUni41XU8K8eruSVJ2hhfaCaCOxxkqcYACa4CLs8FG6cA")  # replace this
+client = OpenAI(api_key="sk-proj-xxxxxxxxxxxxxxxx")
 
 # 🔹 Home route
 @app.route('/')
